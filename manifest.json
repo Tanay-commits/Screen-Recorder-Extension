@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "Screen Recorder",
+    "description": "It records the user's screen",
+    "icons": {
+        "16": "images/icon-16x16.png",
+        "32": "images/icon-32x32.png",
+        "128": "images/icon-128x128.png"
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/icon-16x16.png",
+            "32": "images/icon-32x32.png",
+            "128": "images/icon-128x128.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "run_at": "document_idle"
+        }
+    ],
+    "permissions": [
+        "scripting",
+        "tabs",
+        "activeTab",
+        "storage",
+        "desktopCapture"
+    ],
+    "version": "1.0.0",
+    "author": "Tanay Bahuguna"
+}
