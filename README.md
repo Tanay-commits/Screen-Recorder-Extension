@@ -5,18 +5,30 @@ This is a Extension that enables screen recording directly from the browser. The
 ## 📁 Project Structure
 
 Extension
+
 ├─ background.js # Background script handling runtime events
+
 ├─ content.js # Script injected into web pages for DOM interaction
+
 ├─ css
 │  └─ styles.css # Styling for the extension popup
+
 ├─ images
+
 │  ├─ icon-128x128.png # Extension icon (128x128)
+
 │  ├─ icon-16x16.png # Extension icon (16x16)
+
 │  └─ icon-32x32.png # Extension icon (32x32)
+
 ├─ js
+
 │  └─ popup.js # Main logic for screen recording
+
 ├─ manifest.json # Extension manifest file with permissions and metadata
+
 ├─ popup.html # HTML UI for the extension popup
+
 └─ README.md
 
 
